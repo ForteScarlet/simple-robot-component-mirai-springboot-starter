@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>love.forte</groupId>
+    <groupId>love.forte.simple-robot</groupId>
     <artifactId>component-mirai-spring-boot-starter</artifactId>
     <version>1.14.0</version>
 
@@ -12,6 +12,12 @@
         <core-starter.version>1.14.0</core-starter.version>
         <component-mirai-starter.version>0.5-1.14</component-mirai-starter.version>
     </properties>
+
+    <url>https://github.com/ForteScarlet/simple-robot-component-mirai-springboot-starter</url>
+    <scm>
+        <url>${url}</url>
+    </scm>
+
 
     <dependencies>
         <dependency>
