@@ -12,11 +12,11 @@
 
     <groupId>love.forte.simple-robot</groupId>
     <artifactId>component-mirai-spring-boot-starter</artifactId>
-    <version>1.14.0</version>
+    <version>1.15.0</version>
 
     <properties>
-        <core-starter.version>1.14.0</core-starter.version>
-        <component-mirai-starter.version>0.5-1.14</component-mirai-starter.version>
+        <core-starter.version>1.15.0</core-starter.version>
+        <component-mirai-starter.version>0.6.3-1.15</component-mirai-starter.version>
     </properties>
 
     <url>https://github.com/ForteScarlet/simple-robot-component-mirai-springboot-starter</url>
