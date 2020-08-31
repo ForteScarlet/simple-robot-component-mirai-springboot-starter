@@ -12,16 +12,23 @@
 
     <groupId>love.forte.simple-robot</groupId>
     <artifactId>component-mirai-spring-boot-starter</artifactId>
-    <version>1.15.0</version>
+    <version>1.16.0-preview.1</version>
 
     <properties>
         <core-starter.version>1.15.0</core-starter.version>
-        <component-mirai-starter.version>0.6.3-1.15</component-mirai-starter.version>
+        <core.version>1.16.3</core.version>
+        <component-mirai-starter.version>1.8.1-1.16</component-mirai-starter.version>
+
+        <!-- kt properties -->
+        <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
+        <kotlin.version>1.4.0</kotlin.version>
+        <kotlinx-coroutines-core.version>1.3.9</kotlinx-coroutines-core.version>
+        <kotlinx-serialization.version>1.0.0-RC</kotlinx-serialization.version>
     </properties>
 
     <url>https://github.com/ForteScarlet/simple-robot-component-mirai-springboot-starter</url>
     <scm>
-        <url>${url}</url>
+        <url>https://github.com/ForteScarlet/simple-robot-component-mirai-springboot-starter</url>
     </scm>
 
 
@@ -30,6 +37,13 @@
             <groupId>love.forte.simple-robot-component</groupId>
             <artifactId>component-mirai</artifactId>
             <version>${component-mirai-starter.version}</version>
+        </dependency>
+
+        <!-- core starter -->
+        <dependency>
+            <groupId>io.github.ForteScarlet.simple-robot</groupId>
+            <artifactId>core-spring-boot-starter</artifactId>
+            <version>${core-starter.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>io.github.ForteScarlet</groupId>
@@ -38,13 +52,25 @@
             </exclusions>
         </dependency>
 
-        <!-- core starter -->
+        <!-- core -->
         <dependency>
-            <groupId>io.github.ForteScarlet.simple-robot</groupId>
-            <artifactId>core-spring-boot-starter</artifactId>
-            <version>${core-starter.version}</version>
+            <groupId>io.github.ForteScarlet</groupId>
+            <artifactId>simple-robot-core</artifactId>
+            <version>${core.version}</version>
         </dependency>
 
+        <!-- kt -->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <!-- kt -->
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
     </dependencies>
 
 
