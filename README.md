@@ -45,6 +45,36 @@ public class RunApplication {
 }
 ```
 
+## kotlin
+从mirai的`v1.2.0`开始，便使用了`1.4.0`版本的`kotlin`和`1.3.9`版本的`kotlinx-coroutines`。
+如果你出现了类似于`NoClassDefFoundError`的错误且找不到的类是`kotlin`下的东西，例如`kotlin/coroutines/EmptyCoroutineContext`，
+则请尝试手动导入`1.4.0`版本的`kotlin`
+
+以maven为例：
+```xml
+       <dependency>
+           <groupId>org.jetbrains.kotlin</groupId>
+           <artifactId>kotlin-stdlib-jdk8</artifactId>
+           <version>${kotlin.version}</version>
+       </dependency>
+       <!-- kt -->
+       <dependency>
+           <groupId>org.jetbrains.kotlin</groupId>
+           <artifactId>kotlin-stdlib</artifactId>
+           <version>${kotlin.version}</version>
+       </dependency>
+        <!-- ktx coroutines core -->
+        <dependency>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>kotlinx-coroutines-core</artifactId>
+            <version>${kotlinx-coroutines-core.version}</version>
+        </dependency>
+```
+
+其中，`${kotlin.version}` 为 `1.4.0`, `${kotlinx-coroutines-core.version}`为`1.3.9`.
+
+
+
 
 ## 核心启动器
 
