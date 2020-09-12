@@ -48,7 +48,7 @@ public class RunApplication {
 ## kotlin
 从mirai的`v1.2.0`开始，便使用了`1.4.0`版本的`kotlin`和`1.3.9`版本的`kotlinx-coroutines`。
 如果你出现了类似于`NoClassDefFoundError`的错误且找不到的类是`kotlin`下的东西，例如`kotlin/coroutines/EmptyCoroutineContext`，
-则请尝试手动导入`1.4.0`版本的`kotlin`
+则请尝试手动导入`1.4.10`版本的`kotlin`
 
 以maven为例：
 ```xml
@@ -71,7 +71,7 @@ public class RunApplication {
         </dependency>
 ```
 
-其中，`${kotlin.version}` 为 `1.4.0`, `${kotlinx-coroutines-core.version}`为`1.3.9`.
+其中，`${kotlin.version}` 为 `1.4.10`, `${kotlinx-coroutines-core.version}`为`1.3.9`.
 
 
 
