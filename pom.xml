@@ -12,12 +12,12 @@
 
     <groupId>love.forte.simple-robot</groupId>
     <artifactId>component-mirai-spring-boot-starter</artifactId>
-    <version>1.16.0-preview.2</version>
+    <version>1.16.0-preview.3</version>
 
     <properties>
         <core-starter.version>1.15.0</core-starter.version>
         <core.version>1.16.3</core.version>
-        <component-mirai-starter.version>1.8.3-1.16</component-mirai-starter.version>
+        <component-mirai-starter.version>1.9.0-1.16</component-mirai-starter.version>
 
         <!-- kt properties -->
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
